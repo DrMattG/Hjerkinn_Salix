@@ -22,8 +22,7 @@ simulateData<-function(n){
   Hjerkinn_Salix_Data$`Rust_present?_(y=1/n=0)`<-as.factor(Hjerkinn_Salix_Data$`Rust_present?_(y=1/n=0)`)
   Hjerkinn_Salix_Data$`Early_senescence?_(y=1/n=0)`<-as.factor(Hjerkinn_Salix_Data$`Early_senescence?_(y=1/n=0)`)
   Hjerkinn_Salix_Data$`Dung_or_signs_present_in_Vacinity_(y=1/n=0)`<-as.factor(Hjerkinn_Salix_Data$`Dung_or_signs_present_in_Vacinity_(y=1/n=0)`)
-  Hjerkinn_Salix_Data |> str()
-  
+ 
   Planting_Site_No<-sample(Hjerkinn_Salix_Data$Planting_Site_No, n, replace=TRUE)
   Unit_No<-sample(Hjerkinn_Salix_Data$Unit_No, n, replace=TRUE)                                                            
   Year_planted<-sample(Hjerkinn_Salix_Data$Year_planted, n, replace=TRUE)                                                       
